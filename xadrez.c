@@ -8,7 +8,7 @@ int main() {
 
     printf("Movimento da torre:\n");
 
-    for (a; a <= 5; a++)
+    for (a; a < 5; a++)
     {
         printf("Direita\n");
     }
@@ -21,16 +21,15 @@ int main() {
         printf("Cima, Direita\n");
         b++;
 
-    } while (b <= 4);
+    } while (b < 5);
     
     printf("Movimento da rainha:\n");
 
-    while (c <= 5)
+    while (c < 8)
     {
         printf("Esquerda\n");
         c++;
     }
-    
     
 
     return 0;
