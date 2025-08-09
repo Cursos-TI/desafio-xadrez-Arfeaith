@@ -2,34 +2,50 @@
 
 int main() {
 
-    int a = 0;
-    int b = 0;
-    int c = 0;
+    int torre = 1;
+    int bispo = 1;
+    int rainha = 1;
+    int cavalo = 1;
 
     printf("Movimento da torre:\n");
 
-    for (a; a < 5; a++)
+    for (torre; torre <= 5; torre++)
     {
         printf("Direita\n");
     }
 
-    printf("Movimento do bispo:\n");
+    printf("\nMovimento do bispo:\n");
 
     do
     {
 
         printf("Cima, Direita\n");
-        b++;
+        bispo++;
 
-    } while (b < 5);
+    } while (bispo <= 5);
     
-    printf("Movimento da rainha:\n");
+    printf("\nMovimento da rainha:\n");
 
-    while (c < 8)
+    while (rainha <= 8)
     {
         printf("Esquerda\n");
-        c++;
+        rainha++;
     }
+
+    while (cavalo <= 1)
+    {
+
+        printf("\nMovimento do cavalo:\n");
+
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Cima\n");
+        }
+    
+        printf("Direita\n");
+        cavalo++;
+    }
+    
     
 
     return 0;
